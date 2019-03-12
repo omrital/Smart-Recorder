@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".core.activities.MainActivity">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_gravity="center_horizontal"
+                  android:orientation="vertical">
+
+        <com.omrital.smartrecorder.views.AlphaTextView
+                android:id="@+id/startRecordButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Start recording"
+                android:textColor="#F00"/>
+
+        <com.omrital.smartrecorder.views.AlphaTextView
+                android:id="@+id/stopRecordButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Stop recording"
+                android:textColor="#00F"/>
+
+        <com.omrital.smartrecorder.views.AlphaTextView
+                android:id="@+id/stopPlayingRecordButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Stop playing recording"
+                android:textColor="#00F"/>
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/recordsRecycler"
+                android:layout_marginTop="20dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</FrameLayout>
